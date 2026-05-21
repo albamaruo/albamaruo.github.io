@@ -7,22 +7,21 @@
   }
 }
 
-.rgb-text {
+.rgb-text{
   animation: rgb-cycle 4s linear infinite;
 }
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+
+.marquee{
+  animation: marquee 20s linear infinite;
+  width: max-content;
 }
-@keyframes infinite-scroll {
-  from {
+
+@keyframes marquee{
+  from{
     transform: translateX(0);
   }
-  to {
-    transform: translateX(-50%);
+
+  to{
+    transform: translateX(calc(-50% - 1.5rem));
   }
 }
